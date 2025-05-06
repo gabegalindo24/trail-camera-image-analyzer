@@ -13,8 +13,11 @@
         <p style="font-size: 20px; margin-top: 40px;">Upload your trail camera images folder:</p>
         <input type="file" id="imageFolder" webkitdirectory directory multiple accept="image/*" style="background-color: white;"/>
         <div style="margin-top: 30px;">
-            <button style="border-radius: 5px;" onclick="startLabeling()">Start Labeling</button>
+            <button onclick="startLabeling()">Start Labeling</button>
         </div>
 
+        <div id="labelingSection" style="display: none;">
+            <img id="image-preview" src="">
+        </div>
     </body>
 </html>

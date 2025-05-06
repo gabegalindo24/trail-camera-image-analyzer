@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <title>Trail Camera Image Analyzer</title>
+        <style>
+            body { font-family: Arial,
+            Helvetica, sans-serif;
+            padding: 20px;
+            text-align: center;
+            background-color: cadetblue; }
+        </style>
+    </head>
+    <body>
+        <h1>Trail Camera Image Analyzer</h1>
+        <p style="font-size: 20px; margin-top: 40px;">Upload trail camera images:</p>
+
+        <form method="post" enctype="multipart/form-data" th:action="@{/upload}">
+            <input type="file"
+                   name="images"
+                   webkitdirectory
+                   directory
+                   multiple
+                   accept="image/*"
+                   style="background-color: white;"
+                   required />
+            <br><br>
+            <div style="margin-top: 30px;">
+                <button type="submit">Upload</button>
+            </div>
+        </form>
+    </body>
+</html>

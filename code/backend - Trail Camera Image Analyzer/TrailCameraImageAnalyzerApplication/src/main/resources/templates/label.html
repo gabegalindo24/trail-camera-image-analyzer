@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <title>Labeling - Trail Camera Image Analyzer</title>
+        <style>
+            body { font-family: Arial,
+            Helvetica, sans-serif;
+            padding: 20px;
+            text-align: center;
+            background-color: cadetblue; }
+        </style>
+    </head>
+    <body>
+        <h1> Labeling Trail Camera Images</h1>
+        <p>Label each trail camera image <span th:text="${currIndex + 1}"></span></p>
+
+        <img src="data:image/jpeg;base64,[[${imageName}]]" alt="Image" style="max-width: 500px;">
+    </body>
+</html>
