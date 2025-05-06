@@ -1,4 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <h1>Hello HTML!</h1>
+    <head>
+       <title>Trail Camera Image Analyzer</title>
+    </head>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; padding: 20px; text-align: center; color: rgb(73, 67, 67);}
+    </style>
+    <body>
+        <h1>Trail Camera Image Analyzer</h1>
+
+        <p style="font-size: 20px; margin-top: 40px;">Upload your trail camera images folder:</p>
+        <input type="file" id="imageFolder" webkitdirectory directory multiple accept="image/*"/>
+        <div style="margin-top: 30px;">
+            <button>Start Labeling</button>
+        </div>
+
+    </body>
 </html>
