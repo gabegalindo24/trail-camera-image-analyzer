@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Trail Camera Image Analyzer</title>
+        <title>Trail Camera Image Analyzer</title>
+        <style>
+            body { font-family: Arial, Helvetica, sans-serif; padding: 20px; text-align: center;
+                color: rgb(73, 67, 67); background-color: cadetblue; }
+        </style>
+        <script src="js/app.js"></script>
     </head>
-    <style>
-        body { font-family: Arial, Helvetica, sans-serif; padding: 20px; text-align: center; color: rgb(73, 67, 67);}
-    </style>
     <body>
         <h1>Trail Camera Image Analyzer</h1>
 
         <p style="font-size: 20px; margin-top: 40px;">Upload your trail camera images folder:</p>
-        <input type="file" id="imageFolder" webkitdirectory directory multiple accept="image/*"/>
+        <input type="file" id="imageFolder" webkitdirectory directory multiple accept="image/*" style="background-color: white;"/>
         <div style="margin-top: 30px;">
-            <button>Start Labeling</button>
+            <button style="border-radius: 5px;" onclick="startLabeling()">Start Labeling</button>
         </div>
 
     </body>
