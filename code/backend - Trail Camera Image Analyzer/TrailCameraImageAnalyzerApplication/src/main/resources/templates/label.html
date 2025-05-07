@@ -3,20 +3,23 @@
     <head>
         <title>Labeling - Trail Camera Image Analyzer</title>
         <style>
-            body { font-family: "Impact",
-            Helvetica, sans-serif;
-            padding: 20px;
+            body { font-family: "Impact",Helvetica, sans-serif;
+            padding: 10px;
             text-align: center;
-            background-color: cadetblue; }
+            background-color: rgb(93,101,50); }
         </style>
     </head>
     <body>
-        <h1>Labeling Trail Camera Images</h1>
-        <p style="font-size: 20px; margin-top: 30px;">TRAIL CAMERA IMAGE: </p>
-        <h2  th:text="${currIndex + 1}"></h2>
+        <h1>Label Trail Camera Images</h1>
+        <p style="font-size: 20px; margin-top: 30px;">TRAIL CAMERA IMAGE:</p>
+        <h2 style="color: rgb(250, 249, 246);" th:text="${currIndex + 1}"></h2>
 
-        <img th:src="@{${imageName}}" alt="Image" style="max-width: 1000px;">
+        <img th:src="@{${imageName}}" alt="Image" style="width: 600px; height: 400px; object-fit: cover;">
 
-    
+        <form method="post" th:action="@{/label/next}">
+            <input type="hidden" name="currIndex" th:value="${currIndex}">
+            <button style="margin-top: 30px;" type="submit">Next</button>
+        </form>
+
     </body>
 </html>

@@ -37,18 +37,21 @@ public class UploadController {
         } else {
             System.out.println("Uploading... " + images.size() + " images");
             uploadedImages.clear();
-            uploadedImages.addAll(images);
-            for (int i = 0; i < uploadedImages.size(); i++) {
-                try {
-                    String fileName = uploadedImages.get(i).getOriginalFilename();
-                    Path uploadPath = Paths.get("src/main/resources/static/uploads/" + fileName);
-                    Files.createDirectories(uploadPath.getParent());
-                    uploadedImages.get(i).transferTo(uploadPath);
-//                    uploadedImages.add(uploadedImages.get(i));
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
+
+            for (int i = 0; i < images.size(); i++) {
+                String fileName = images.get(i).getOriginalFilename();
+                if (fileName != null && fileName.contains(".JPG")) {
+                    try {
+                        Path uploadPath = Paths.get("src/main/resources/static/uploads/" + fileName);
+                        Files.createDirectories(uploadPath.getParent());
+                        images.get(i).transferTo(uploadPath);
+
+                        uploadedImages.add(images.get(i));
+                        System.out.println("Saved Image " + (i+1) + ": " + fileName);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 }
-                System.out.println("Image " + (i+1) + ": " + uploadedImages.get(i).getOriginalFilename());
             }
 
             model.addAttribute("currIndex", 0);
@@ -75,5 +78,23 @@ public class UploadController {
         return redirect;
     }
 
+    @PostMapping("/label/next")
+    public String showNextImage(@RequestParam("currIndex") int currIndex, Model model) {
+        int nextIndex = currIndex + 1;
+        String redirect = "label";
+
+        if (nextIndex >= uploadedImages.size()) {
+            model.addAttribute("message", "Labeling images complete!");
+            redirect = "done";
+        } else {
+            MultipartFile nextImage = uploadedImages.get(nextIndex);
+            String fileName = nextImage.getOriginalFilename();
+
+            model.addAttribute("currIndex", nextIndex);
+            model.addAttribute("imageName", "/uploads/" + fileName);
+        }
+
+        return redirect;
+    }
 
 }
