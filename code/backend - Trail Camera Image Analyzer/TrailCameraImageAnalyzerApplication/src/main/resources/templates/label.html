@@ -3,7 +3,7 @@
     <head>
         <title>Labeling - Trail Camera Image Analyzer</title>
         <style>
-            body { font-family: Arial,
+            body { font-family: "Impact",
             Helvetica, sans-serif;
             padding: 20px;
             text-align: center;
@@ -11,9 +11,12 @@
         </style>
     </head>
     <body>
-        <h1> Labeling Trail Camera Images</h1>
-        <p>Label each trail camera image <span th:text="${currIndex + 1}"></span></p>
+        <h1>Labeling Trail Camera Images</h1>
+        <p style="font-size: 20px; margin-top: 30px;">TRAIL CAMERA IMAGE: </p>
+        <h2  th:text="${currIndex + 1}"></h2>
 
-        <img src="data:image/jpeg;base64,[[${imageName}]]" alt="Image" style="max-width: 500px;">
+        <img th:src="@{${imageName}}" alt="Image" style="max-width: 1000px;">
+
+    
     </body>
 </html>
