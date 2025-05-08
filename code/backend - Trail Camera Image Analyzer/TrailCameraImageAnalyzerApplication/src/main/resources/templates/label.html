@@ -14,11 +14,25 @@
         <p style="font-size: 20px; margin-top: 30px;">TRAIL CAMERA IMAGE:</p>
         <h2 style="color: rgb(250, 249, 246);" th:text="${currIndex + 1}"></h2>
 
-        <img th:src="@{${imageName}}" alt="Image" style="width: 600px; height: 400px; object-fit: cover;">
+        <img th:src="@{${imageName}}" alt="Image" style="width: 600px; height: 400px; object-fit: cover; margin-bottom: 20px;">
 
         <form method="post" th:action="@{/label/next}">
+            <label for="animal" style="font-family:verdana">Species Type:</label>
+            <select id="animal" name="animal">
+                <option value="deer">Deer</option>
+                <option value="turkey">Turkey</option>
+                <option value="coyote">Coyote</option>
+                <option value="bobcat">Bobcat</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+
+            <label for="quantity" style="font-family:verdana">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1">
+            <br><br>
+
             <input type="hidden" name="currIndex" th:value="${currIndex}">
-            <button style="margin-top: 30px;" type="submit">Next</button>
+            <button style="margin-top: 10px;" type="submit">Submit</button>
         </form>
 
     </body>
