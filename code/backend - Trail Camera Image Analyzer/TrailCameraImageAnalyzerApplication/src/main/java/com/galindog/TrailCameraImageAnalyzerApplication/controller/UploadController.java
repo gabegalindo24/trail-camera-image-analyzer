@@ -1,8 +1,7 @@
 // Gabe Galindo
 // CYBR 408: Principles of Programming Languages & Automata
 // Final Project - Trail Camera Image Analyzer
-// 05/14/2025
-
+// 05/15/2025
 // UploadController class
 
 package com.galindog.TrailCameraImageAnalyzerApplication.controller;
@@ -29,7 +28,7 @@ public class UploadController {
 
     @PostMapping("/upload")
     public String handleFolderUpload(@RequestParam("images") List<MultipartFile> images, Model model) {
-        String redirect = "redirect:/label";
+        String redirect = "redirect:/label?currIndex=0";
 
         if (images == null || images.isEmpty()) {
             System.out.println("No images uploaded!!!");
@@ -54,47 +53,35 @@ public class UploadController {
                 }
             }
 
-            model.addAttribute("currIndex", 0);
-            model.addAttribute("imageName", uploadedImages.getFirst().getOriginalFilename());
         }
 
         return redirect;
     }
 
     @GetMapping("/label")
-    public String showLabelPage(Model model) {
+    public String showLabelPage(@RequestParam("currIndex") int currIndex, Model model) {
         String redirect = "label";
 
         if (uploadedImages.isEmpty()) {
             redirect = "error";
+        } else if (currIndex >= uploadedImages.size()) {
+            model.addAttribute("message", "Labeling images complete!");
+            redirect = "done";
+        } else {
+            MultipartFile nextImage = uploadedImages.get(currIndex);
+            // meta data from jpeg
+            String fileName = nextImage.getOriginalFilename();
+
+            model.addAttribute("currIndex", currIndex);
+            model.addAttribute("imageName", "/" + fileName);
         }
-
-        MultipartFile firstImage = uploadedImages.getFirst();
-        String fileName = firstImage.getOriginalFilename();
-
-        model.addAttribute("currIndex", 0);
-        model.addAttribute("imageName", fileName);
 
         return redirect;
     }
 
     @PostMapping("/label/next")
-    public String showNextImage(@RequestParam("currIndex") int currIndex, Model model) {
-        int nextIndex = currIndex + 1;
-        String redirect = "label";
-
-        if (nextIndex >= uploadedImages.size()) {
-            model.addAttribute("message", "Labeling images complete!");
-            redirect = "done";
-        } else {
-            MultipartFile nextImage = uploadedImages.get(nextIndex);
-            String fileName = nextImage.getOriginalFilename();
-
-            model.addAttribute("currIndex", nextIndex);
-            model.addAttribute("imageName", "/" + fileName);
-        }
-
-        return redirect;
+    public String getNextImage(@RequestParam("currIndex") int currIndex) {
+        return "redirect:/label?currIndex=" + (currIndex + 1);
     }
 
 }
