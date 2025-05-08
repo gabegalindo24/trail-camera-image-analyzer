@@ -42,7 +42,7 @@ public class UploadController {
                 String fileName = images.get(i).getOriginalFilename();
                 if (fileName != null && fileName.contains(".JPG")) {
                     try {
-                        Path uploadPath = Paths.get("src/main/resources/static/uploads/" + fileName);
+                        Path uploadPath = Paths.get("uploads/" + fileName);
                         Files.createDirectories(uploadPath.getParent());
                         images.get(i).transferTo(uploadPath);
 
@@ -73,7 +73,7 @@ public class UploadController {
         String fileName = firstImage.getOriginalFilename();
 
         model.addAttribute("currIndex", 0);
-        model.addAttribute("imageName", "/uploads/" + fileName);
+        model.addAttribute("imageName", fileName);
 
         return redirect;
     }
@@ -91,7 +91,7 @@ public class UploadController {
             String fileName = nextImage.getOriginalFilename();
 
             model.addAttribute("currIndex", nextIndex);
-            model.addAttribute("imageName", "/uploads/" + fileName);
+            model.addAttribute("imageName", "/" + fileName);
         }
 
         return redirect;
