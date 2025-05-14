@@ -3,7 +3,7 @@
 ## Project Summary  
 The **Trail Camera Image Analyzer** is a Java Spring Boot web application built to help users process and analyze wildlife photos taken from a trail cameras. This application tool would be useful to researchers, landowners, hunters, and wildlife enthusiasts who want to draw some insights from their trail camera images.
 
-## Project Tech Stack
+### Project Tech Stack
 **Backend:** Java Spring Boot  
 **Frontend:** Thymeleaf & HTML
  
