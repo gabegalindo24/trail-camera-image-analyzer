@@ -28,11 +28,11 @@
             <br><br>
 
             <label for="quantity" style="font-family:verdana">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="0">
+            <input type="number" id="quantity" name="quantity" min="0" required />
             <br><br>
 
             <input type="hidden" name="currIndex" th:value="${currIndex}">
-            <button style="margin-top: 10px;" type="submit">Submit</button>
+            <button style="margin-top: 10px;" type="submit">Save and Next</button>
         </form>
 
     </body>
