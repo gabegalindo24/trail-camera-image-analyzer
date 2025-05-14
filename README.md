@@ -10,7 +10,7 @@ The **Trail Camera Image Analyzer** is a Java Spring Boot web application built 
   - Total quantity of animals seen per species
   - Animal Activity by date
   - Top hours of animal activity (based on image creation date)
-- [**Web UI**](): Simple Thymeleaf-based frontend that allows users to:
+- **Web UI**: Simple Thymeleaf-based frontend that allows users to:
   - View uploaded and categorized images
   - Filter by species
   - View generated statistics 
