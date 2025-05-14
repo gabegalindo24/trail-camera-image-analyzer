@@ -28,6 +28,8 @@ The **Trail Camera Image Analyzer** is a Java Spring Boot web application built 
 5. After labeling the last image, you'll be taken to the results page automatically. 
   - Browse uploaded images by species
   - View stats like total images per species, total animal counts, daily activity, and top hours of animal movement
+* NOTE: If you want to upload a new folder of images, make sure to delete or clear the existing contents of the /uploads/ directory first.
+Path: code/backend - Trail Camera Image Analyzer/uploads/
 
 ## Links
 * [Documentation of Effort](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/DOCUMENTATION.md)
