@@ -9,3 +9,8 @@
 * All OOP code must follow OOP best practices.
 * Conventional Data Structure designs must be used if possible.
 * Submissions should have no compiler or interpreter errors
+
+
+## Links
+* [README.md](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/README.md)
+* [Documentation of Effort](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/DOCUMENTATION.md)

@@ -26,6 +26,5 @@ This document outlines the effort put into the project in a timeline.
 
 
 ## Links
-
-- [Standards and Practices (S&P) Document](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/S%26P.md)
-- [README.md](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/README.md)
+* [README.md](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/README.md)
+* [Standards and Practices (S&P)](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/S%26P.md)
