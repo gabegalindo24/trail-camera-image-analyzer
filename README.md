@@ -7,7 +7,7 @@ The **Trail Camera Image Analyzer** is a Java Spring Boot web application built 
 **Backend:** Java Spring Boot  
 **Frontend:** Thymeleaf & HTML
  
-#### Project Scope
+### Project Scope
 - **Image Organization**: Classify and organize images into folders by species based on the filename.
 - **Analytics**: Find useful analytics from filenames and image metadata:
   - Total number of images per species
