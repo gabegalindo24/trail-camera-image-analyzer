@@ -5,6 +5,7 @@
 * Programs should be broken into functions where possible.
 * All functions should be well defined.
 * All functions should be testable.
+* All functions should have only one return statement.
 * All code should be self-documenting.
 * All OOP code must follow OOP best practices.
 * Conventional Data Structure designs must be used if possible.
