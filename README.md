@@ -20,8 +20,9 @@ The **Trail Camera Image Analyzer** is a Java Spring Boot web application built 
   - View generated statistics 
 
 ### Limitations
-- Everything runs off the image filename. So filenames have to follow this format: **Example: `deer_1_11-07-2022_08:42:54_PM.JPG`**
 - No machine learning — this project relies entirely on filenames for classification.
+- Everything runs off the image filename. So filenames have to follow this format:
+ - **Example: `deer_1_11-07-2022_08:42:54_PM.JPG`**
 - Images must be manually labeled ahead of time with the correct species and animal count in the filename.
 - Analytics are not saved or exportable — everything is generated on the fly each time the page loads.
 
