@@ -2,6 +2,10 @@
 
 ## Project Summary  
 The **Trail Camera Image Analyzer** is a Java Spring Boot web application built to help users process and analyze wildlife photos taken from a trail cameras. This application tool would be useful to researchers, landowners, hunters, and wildlife enthusiasts who want to draw some insights from their trail camera images.
+
+## Project Tech Stack
+**Backend:** Java Spring Boot  
+**Frontend:** Thymeleaf & HTML
  
 #### Project Scope
 - **Image Organization**: Classify and organize images into folders by species based on the filename.
@@ -16,6 +20,7 @@ The **Trail Camera Image Analyzer** is a Java Spring Boot web application built 
   - View generated statistics 
 
 ### Limitations
+- Everything runs off the image filename. So filenames have to follow this format: **Example: `deer_1_11-07-2022_08:42:54_PM.JPG`**
 - No machine learning — this project relies entirely on filenames for classification.
 - Images must be manually labeled ahead of time with the correct species and animal count in the filename.
 - Analytics are not saved or exportable — everything is generated on the fly each time the page loads.
@@ -35,3 +40,5 @@ Path: code/backend - Trail Camera Image Analyzer/uploads/
 ## Links
 * [Documentation of Effort](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/DOCUMENTATION.md)
 * [Standards and Practices (S&P)](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/S%26P.md)
+* [Java Backend]()
+* [HTML Frontend]()
