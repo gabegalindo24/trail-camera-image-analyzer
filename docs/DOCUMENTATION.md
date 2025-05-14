@@ -1,8 +1,9 @@
 # Documentation of Effort
+
 This document outlines the effort put into the project in a timeline.
 
-
 ## Timeline of Effort/Tasks
+
 | Date       | Task Completed                                           | Notes
 |------------|----------------------------------------------------------|--------------------------------------------------------------------|
 | 05-05-2025 | Planned project scope and goals                          | Picking out my project and objectives                              |
@@ -25,5 +26,5 @@ This document outlines the effort put into the project in a timeline.
 
 
 ## Links
-* [Standards and Practices (S&P) Document](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/S%26P.md)
 * [README.md](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/README.md)
+* [Standards and Practices (S&P)](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/S%26P.md)
