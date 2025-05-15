@@ -4,8 +4,10 @@
 The **Trail Camera Image Analyzer** is a Java Spring Boot web application built to help users process and analyze wildlife photos taken from a trail cameras. This application tool would be useful to researchers, landowners, hunters, and wildlife enthusiasts who want to draw some insights from their trail camera images.
 
 ### Project Tech Stack
-**Backend:** [Java Spring Boot](https://spring.io/projects/spring-boot)  
+**Backend:** [Java Spring Boot](https://spring.io/projects/spring-boot)
+* [Java Spring Boot Backend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/a1c50be0069e4530931b0b51176d6c34f03717c4/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/java/com/galindog/TrailCameraImageAnalyzerApplication)  
 **Frontend:** [Thymeleaf & HTML](https://www.thymeleaf.org/)
+* [Thymeleaf & HTML Frontend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/a1c50be0069e4530931b0b51176d6c34f03717c4/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/resources/templates) 
 
 ### Project Scope
 - **Image Organization**: Classify and organize images into folders by species based on the filename.
@@ -38,7 +40,5 @@ NOTE: If you want to upload a new folder of images, make sure to delete or clear
 Path: code/backend - Trail Camera Image Analyzer/uploads/
 
 ## Links
-* [Java Spring Boot Backend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/a1c50be0069e4530931b0b51176d6c34f03717c4/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/java/com/galindog/TrailCameraImageAnalyzerApplication)
-* [Thymeleaf & HTML Frontend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/a1c50be0069e4530931b0b51176d6c34f03717c4/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/resources/templates) 
 * [Documentation of Effort](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/DOCUMENTATION.md)
 * [Standards and Practices (S&P)](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/S%26P.md)
