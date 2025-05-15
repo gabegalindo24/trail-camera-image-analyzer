@@ -4,8 +4,8 @@
 The **Trail Camera Image Analyzer** is a Java Spring Boot web application built to help users process and analyze wildlife photos taken from a trail cameras. This application tool would be useful to researchers, landowners, hunters, and wildlife enthusiasts who want to draw some insights from their trail camera images.
 
 ### Project Tech Stack
-**Backend:** Java Spring Boot  
-**Frontend:** Thymeleaf & HTML
+**Backend:** [Java Spring Boot](https://spring.io/projects/spring-boot)  
+**Frontend:** [Thymeleaf & HTML](https://www.thymeleaf.org/)
 
 #### Project Scope
 ### Project Scope
@@ -41,5 +41,5 @@ Path: code/backend - Trail Camera Image Analyzer/uploads/
 ## Links
 * [Documentation of Effort](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/DOCUMENTATION.md)
 * [Standards and Practices (S&P)](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/S%26P.md)
-* [Java Backend]()
+* [Java Backend](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/221525425a04254d22cf8ec6745f1468e29d1dbd/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/java/com/galindog/TrailCameraImageAnalyzerApplication)
 * [HTML Frontend]()
