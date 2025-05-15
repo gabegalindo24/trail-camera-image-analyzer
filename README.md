@@ -7,7 +7,6 @@ The **Trail Camera Image Analyzer** is a Java Spring Boot web application built 
 **Backend:** [Java Spring Boot](https://spring.io/projects/spring-boot)  
 **Frontend:** [Thymeleaf & HTML](https://www.thymeleaf.org/)
 
-#### Project Scope
 ### Project Scope
 - **Image Organization**: Classify and organize images into folders by species based on the filename.
 - **Analytics**: Find useful analytics from filenames and image metadata:
@@ -42,4 +41,4 @@ Path: code/backend - Trail Camera Image Analyzer/uploads/
 * [Documentation of Effort](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/DOCUMENTATION.md)
 * [Standards and Practices (S&P)](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/S%26P.md)
 * [Java Spring Boot Backend in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/221525425a04254d22cf8ec6745f1468e29d1dbd/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/java/com/galindog/TrailCameraImageAnalyzerApplication)
-* [Thymeleaf & HTML Frontend](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/91ed817145ef3dcb24d37ac4b1e2f962da0f6866/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/resources/templates)
+* [Thymeleaf & HTML Frontend in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/91ed817145ef3dcb24d37ac4b1e2f962da0f6866/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/resources/templates)
