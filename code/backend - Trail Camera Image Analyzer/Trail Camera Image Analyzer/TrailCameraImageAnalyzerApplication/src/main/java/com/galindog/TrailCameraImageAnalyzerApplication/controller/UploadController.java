@@ -110,7 +110,8 @@ public class UploadController {
 
     // shows the done page with images and analytics
     @GetMapping("/done")
-    public String showDonePage(@RequestParam(value = "species", required = false, defaultValue = "all") String species, Model model) {
+    public String showDonePage(@RequestParam(value = "species", required = false, defaultValue = "all") String species,
+                               Model model) {
         List<String> imagePaths = new ArrayList<>();
         List<ImageData> analyticsList = new ArrayList<>();
         if (!uploadedImages.isEmpty()) {
@@ -119,7 +120,7 @@ public class UploadController {
             File baseDir = new File(uploadPath);
             // load images based on selected species
             if (species.equals("all")) {
-                for (File speciesFolder : baseDir.listFiles()) {
+                for (File speciesFolder : Objects.requireNonNull(baseDir.listFiles())) {
                     if (speciesFolder.isDirectory()) {
                         for (File img : Objects.requireNonNull(speciesFolder.listFiles())) {
                             String fileName = img.getName();
