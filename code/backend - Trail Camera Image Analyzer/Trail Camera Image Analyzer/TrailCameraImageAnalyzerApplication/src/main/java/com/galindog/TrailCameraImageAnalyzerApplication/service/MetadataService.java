@@ -15,7 +15,7 @@ import java.util.Date;
 // MetadataService class - service class to extract metadata from image files
 public class MetadataService {
 
-    // Extracts creation date metadata from the given image file path
+    // extracts creation date metadata from the given image file path
     public ImageMetadata extractMetadata(String filePath) {
         ImageMetadata imageMetadata;
         try {
