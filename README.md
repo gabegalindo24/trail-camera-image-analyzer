@@ -41,5 +41,6 @@ NOTE: If you want to upload a new folder of images, make sure to delete or clear
 Path: code/backend - Trail Camera Image Analyzer/uploads/
 
 ## Links
+* [Final Project Presentation](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/CYBR%20408%20-%20Final%20Project%20Presentation.pdf)
 * [Documentation of Effort](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/DOCUMENTATION.md)
 * [Standards and Practices (S&P)](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/S%26P.md)
