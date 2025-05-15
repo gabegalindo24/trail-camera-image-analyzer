@@ -28,5 +28,5 @@ This document outlines the effort put into the project in a timeline.
 ## Links
 * [README.md](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/README.md)
 * [Standards and Practices (S&P)](https://github.com/gabegalindo24/CYBR_408_Final_Project/blob/main/docs/S%26P.md)
-* [Java Spring Boot Backend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/221525425a04254d22cf8ec6745f1468e29d1dbd/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/java/com/galindog/TrailCameraImageAnalyzerApplication)
-* [Thymeleaf & HTML Frontend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/91ed817145ef3dcb24d37ac4b1e2f962da0f6866/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/resources/templates)
+* [Java Spring Boot Backend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/a1c50be0069e4530931b0b51176d6c34f03717c4/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/java/com/galindog/TrailCameraImageAnalyzerApplication)
+* [Thymeleaf & HTML Frontend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/a1c50be0069e4530931b0b51176d6c34f03717c4/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/resources/templates) 
