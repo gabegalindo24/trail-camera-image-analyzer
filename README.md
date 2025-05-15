@@ -5,10 +5,10 @@ The **Trail Camera Image Analyzer** is a Java Spring Boot web application built 
 
 ### Project Tech Stack
 **Backend:** [Java Spring Boot](https://spring.io/projects/spring-boot)
-- [Java Spring Boot Backend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/a1c50be0069e4530931b0b51176d6c34f03717c4/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/java/com/galindog/TrailCameraImageAnalyzerApplication)  
+- [Java Spring Boot Backend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/main/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/java/com/galindog/TrailCameraImageAnalyzerApplication)  
 
 **Frontend:** [Thymeleaf & HTML](https://www.thymeleaf.org/)
-- [Thymeleaf & HTML Frontend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/a1c50be0069e4530931b0b51176d6c34f03717c4/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/resources/templates) 
+- [Thymeleaf & HTML Frontend Code in Project](https://github.com/gabegalindo24/CYBR_408_Final_Project/tree/main/code/backend%20-%20Trail%20Camera%20Image%20Analyzer/Trail%20Camera%20Image%20Analyzer/TrailCameraImageAnalyzerApplication/src/main/resources/templates) 
 
 ### Project Scope
 - **Image Organization**: Classify and organize images into folders by species based on the filename.
