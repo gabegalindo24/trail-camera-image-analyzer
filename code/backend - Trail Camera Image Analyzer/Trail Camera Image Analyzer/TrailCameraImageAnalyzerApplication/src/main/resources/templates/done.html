@@ -11,7 +11,6 @@
     </head>
     <body>
     <h1>Labeled Trail Camera Images</h1>
-
     <form method="post" th:action="@{/done}">
         <label for="species">Filter by species:</label>
         <select id="species" name="species">
@@ -24,38 +23,32 @@
         </select>
         <button type="submit">Filter</button>
     </form>
-
     <div th:if="${images != null}">
         <h2 th:text="'Showing: ' + ${selectedSpecies}"></h2>
         <div th:each="img : ${images}">
             <img th:src="@{${img}}" width="400px" style="margin: 10px;" />
         </div>
     </div>
-
     <hr>
     <h2 style="margin-bottom: 20px;">Analytics</h2>
-
     <h3>Total Images Per Species:</h3>
     <ul style="list-style-type: none; padding: 0; font-family: verdana; color: rgb(250, 249, 246);">
         <li th:each="entry : ${speciesCount}" style="margin: 5px 0;">
             <span th:text="${entry.key} + ': ' + ${entry.value}"></span>
         </li>
     </ul>
-
     <h3>Total Animals Per Species:</h3>
     <ul style="list-style-type: none; padding: 0; font-family: verdana; color: rgb(250, 249, 246);">
         <li th:each="entry : ${speciesQuantity}" style="margin: 5px 0;">
             <span th:text="${entry.key} + ': ' + ${entry.value}"></span>
         </li>
     </ul>
-
     <h3>Animal Activity by Date:</h3>
     <ul style="list-style-type: none; padding: 0; font-family: verdana; color: rgb(250, 249, 246);">
         <li th:each="entry : ${dailyCount}" style="margin: 5px 0; color: rgb(250, 249, 246);">
             <span th:text="${entry.key} + ': ' + ${entry.value}"></span>
         </li>
     </ul>
-
     <h3>Top 3 Activity Times:</h3>
     <ul style="text-align: center; list-style: none; padding: 0; font-family: verdana; color: rgb(250, 249, 246);">
         <li th:each="entry : ${topHours}">
